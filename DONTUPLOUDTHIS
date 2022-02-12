@@ -1,0 +1,7 @@
+            <div class="project">
+                <div>
+                    <img src="../img/fnf.png" alt=""><h1>Friday Night Funkin' mod: VS Ardub (The cringest mod ever)</h1>
+                </div>
+                <span class="status">Status: <span class="frozen"><span class="material-icons">ac_unit</span> Frozen</span></span>
+                <span class="status">Article status: <span class="not-started"><span class="material-icons">schedule</span> Not started (Not working)</span></span>
+            </div>

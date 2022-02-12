@@ -1,0 +1,296 @@
+@font-face {
+    font-family: milk;
+    src: url(font/milk.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a{
+    all: unset;
+    display: block;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-weight: normal;
+}
+
+.material-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: url(img/bg.png) repeat fixed black;
+    animation: change-background 2s linear infinite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #33cc34;
+    .logo{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        h1{
+            font-weight: normal;
+            font-size: 6vmin;
+            padding-left: 2vh;
+            color: white;
+            font-family: 'Nunito', sans-serif;
+        }
+        padding: 2vmin;
+        img{
+            width: 10vmin;
+        }
+    }
+    .navigation{
+        padding: 2vh;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-size: 3vmin;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        .no-margin{
+            margin: 0px;
+        }
+        li{
+            margin-right: 2vh;
+            display: flex;
+            align-items: center;
+            padding: 1.5vmin;
+            background-color: #2cb22d;
+            border-radius: 1vmin;
+            cursor: pointer;
+            transition-duration: .3s;
+            &:hover{
+                transition-duration: .3s;
+                transform: scale(.9);
+                color: #33cc34;
+            }
+        }
+        .material-icons{
+            padding-right: 1vmin;
+        }
+    }
+}
+
+.hello{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: white;   
+    img{
+        padding: 10vmin;
+        width: 40vw;
+    }
+    article{
+        font-size: 4vmin;
+        padding: 10vmin;
+    }
+    .material-icons{
+        font-size: 3vmin;
+    }
+}
+
+.project-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5vmin;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 8vmin;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 5vmin;
+    a{
+        display: flex;
+        justify-content: center;
+    }
+    .project{
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin: 3vmin;
+        padding: 2vmin;
+        border-radius: 2vmin;
+        background-color: white;
+        font-family: 'Nunito', sans-serif;
+        transition-duration: .3s;
+        .soon{
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: gainsboro;
+            font-size: 10vmax;
+        }
+        img{
+            padding: 1vmin;
+            border-radius: 2vmin;
+            width: 100%;
+        }
+        h1{
+            padding: 1vmin;
+            text-align: center;
+            font-size: 5.5vmin;
+        }
+        .status{
+            font-size: 4vmin;
+            .material-icons{
+                font-size: 3vmin;
+            }
+            .not-started{
+                color: #7f7f7f;
+            }
+            .frozen {
+                color: #0033ff;
+            }
+            .on-proccess {
+                color: #00d400;
+            }
+        }
+        .see-more{
+            font-size: 2.5vmin;
+            .material-icons{
+                font-size: 2vmin;
+            }
+            color: gray;
+        }
+        &:hover{
+            cursor: pointer;
+            transition-duration: .3s;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    .text-links{
+        padding: 5vmin 0 5vmin 5vmin;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        font-size: 5vmin;
+        .material-icons{
+            font-size: 5vmin;
+        }
+    }
+    .link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vmin;
+        div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            border-radius: 1vmin;
+            font-family: 'Nunito', sans-serif;
+            padding: 1vmin;
+            margin: 0 0 3vmin 0;
+            width: 40vw;
+            transition-duration: .3s;
+            h1{
+                font-size: 5vmin;
+            }
+            img{
+                width: 3vw;
+            }
+            &:hover{
+                cursor: pointer;
+                transition-duration: .3s;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    background-color: #037008;
+    color: #049a0b; 
+    p{
+        font-size: 3vmin; 
+        font-family: 'Nunito', sans-serif;
+    }
+}
+
+@keyframes change-background {   
+  from {     
+    background-position-x: -32px;
+    background-position-y: -32px;
+  }
+  to {
+    background-position-x: 32px;  
+    background-position-y: 32px;  
+   }
+}
+
+@media (max-width: 600px) {
+    .logo h1{
+        display: none;
+    }
+    .hello{
+        h1{
+            padding: 10vmin 5vmin 5vmin 5vmin;
+        }
+        img{
+            padding: 10vmin 0 0 0;
+        }
+        flex-direction: column;
+    }
+    .projects{
+        flex-direction: column;
+        align-items: center;
+        .project{
+            width: 90%;
+        }
+    }
+    .links{
+        flex-direction: column;
+        align-items: center;
+        .text-links{
+            padding: 4vmin 4vmin 0 4vmin;
+        }
+        flex-direction: column;
+        .link{
+            div{
+                width: 60vw;
+            }
+        }
+    }
+}
